@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peras al Malbec - Potrero Digital</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos específicos para esta receta */
+        .header-receta {
+            background: linear-gradient(135deg, #6a0dad 0%, #8b008b 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+        }
+        
+        .header-receta h1 {
+            color: white;
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .receta-peras {
+            background-color: #fdf0f7;
+            border-left: 5px solid #8b008b;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        
+        .receta-img-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .receta-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            border: 4px solid #e0c0e0;
+            transition: transform 0.3s ease;
+        }
+        
+        .receta-img:hover {
+            transform: scale(1.02);
+        }
+        
+        .video-container {
+            background-color: #f5e5f5;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 3rem auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            min-height: 450px;
+            border-radius: 10px;
+            border: 3px solid #c9a0c9;
+        }
+        
+        .enlaces {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .btn-receta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 12px 25px;
+            background-color: #8b008b;
+            color: white !important;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(139, 0, 139, 0.3);
+        }
+        
+        .btn-receta:hover {
+            background-color: #6a0dad;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(106, 13, 173, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .header-receta h1 {
+                font-size: 2.2rem;
+            }
+            
+            .video-container iframe {
+                min-height: 300px;
+            }
+            
+            .enlaces {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header-receta">
+            <h1><i class="fas fa-wine-glass-alt"></i> Receta de Peras al Malbec</h1>
+            <p class="subtitulo">Un postre elegante con vino argentino</p>
+        </header>
+        
+        <main class="receta receta-peras">
+            <div class="receta-img-container">
+                <img src="../../img/peras_malbec.jpg" alt="Peras al Malbec terminadas" class="receta-img">
+            </div>
+            
+            <div class="seccion">
+                <p class="descripcion">Postre sofisticado de peras cocidas en vino tinto Malbec con especias, que combina la dulzura de la fruta con la complejidad del vino. Perfecto para cenas especiales y para impresionar a tus invitados.</p>
+            </div>
+            
+            <div class="seccion">
+                <h2><i class="fas fa-shopping-basket"></i> Ingredientes</h2>
+                <ul class="ingredientes">
+                    <li><span>4 peras firmes</span> (preferentmente Conference o Williams)</li>
+                    <li><span>750ml de Malbec</span> (1 botella de buen vino)</li>
+                    <li><span>200g de azúcar</span> (puede ser mascabo para un toque especial)</li>
+                    <li><span>1 rama de canela</span></li>
+                    <li><span>3 clavos de olor</span></li>
+                    <li><span>1 vaina de vainilla</span> (opcional)</li>
+                    <li><span>Cáscara de 1 naranja</span> (solo la parte amarilla)</li>
+                    <li><span>1 estrella de anís</span> (opcional)</li>
+                </ul>
+            </div>
+            
+            <div class="seccion">
+                <h2><i class="fas fa-mortar-pestle"></i> Preparación</h2>
+                <ol class="pasos">
+                    <li><strong>Preparar las peras:</strong> Pelar cuidadosamente las peras dejando el rabo intacto para presentación.</li>
+                    <li><strong>Preparar el líquido:</strong> En una olla amplia, combinar el Malbec, azúcar, canela, clavos, vainilla (si se usa), cáscara de naranja y anís.</li>
+                    <li><strong>Cocinar las peras:</strong> Llevar a fuego medio hasta que hierva. Reducir el fuego y agregar las peras. Cocinar 30-40 minutos dando vuelta ocasionalmente.</li>
+                    <li><strong>Reducir el syrup:</strong> Retirar las peras con cuidado. Aumentar el fuego y reducir el líquido a la mitad hasta que tenga consistencia de almíbar.</li>
+                    <li><strong>Servir:</strong> Colocar las peras en platos individuales, bañar con el syrup y acompañar con helado de vainilla o crema fresca.</li>
+                </ol>
+            </div>
+            
+            <div class="seccion tips">
+                <h3><i class="fas fa-lightbulb"></i> Consejos del Sommelier</h3>
+                <ul>
+                    <li>Usar un Malbec joven y frutado para mejor resultado.</li>
+                    <li>No cocinar demasiado las peras para que mantengan su forma.</li>
+                    <li>Puedes añadir 1 cucharada de miel al syrup para más complejidad.</li>
+                    <li>Servir con un pequeño vasito del mismo Malbec usado en la receta.</li>
+                </ul>
+            </div>
+            
+            <div class="video-container">
+                <h3><i class="fas fa-video"></i> Video Tutorial</h3>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/S4R1npbgl_k" title="Peras al vino tinto - Receta paso a paso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="video-descripcion">Aprende los secretos de este postre en nuestro video paso a paso</p>
+            </div>
+            
+            <div class="enlaces">
+                <a href="https://www.gourmet.cl/recetas/peras-al-vino-tinto-con-estrella-de-anis/" class="btn-receta" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Ver en Cookpad
+                </a>
+                <a href="pastel-de-papa.html" class="btn-receta">
+                    <i class="fas fa-arrow-left"></i> Receta de Pastel de Papa
+                </a>
+                <a href="../../index.html" class="btn-receta">
+                    <i class="fas fa-home"></i> Volver al Inicio
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
